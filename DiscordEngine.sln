@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{002A2DE9-8BB6-484D-9802-7E4AD4084715}") = "DiscordEngine", "DiscordEngine.visualdproj", "{98860D00-48AB-458F-8CE8-A2E87B2F3A97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98860D00-48AB-458F-8CE8-A2E87B2F3A97}.Debug|Win32.ActiveCfg = Debug|Win32
+		{98860D00-48AB-458F-8CE8-A2E87B2F3A97}.Debug|Win32.Build.0 = Debug|Win32
+		{98860D00-48AB-458F-8CE8-A2E87B2F3A97}.Release|Win32.ActiveCfg = Release|Win32
+		{98860D00-48AB-458F-8CE8-A2E87B2F3A97}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
