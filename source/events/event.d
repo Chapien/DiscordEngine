@@ -1,24 +1,22 @@
+import event_receiver;
+
 class EventData
 {
-
+    long eventID;    
 }
 
 class Event
 {
     EventData data;
-
-
-
+    void SendEvent(EventReceiver target)
+    {
+        if (target.CanHandle(this))
+        {
+            //Send the event
+        }
+    }
+    
 }
 
-interface EventReceiver
-{
-    bool CanHandle(const Event e);
-    void Handle(Event e);
-}
 
-interface EventDispatcher : EventReceiver
-{
-    void AddListener(EventReceiver *receiver);
-    void RemoveListener(EventReceiver *receiver);
-}
+
