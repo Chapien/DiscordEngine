@@ -4,7 +4,7 @@
     "copyright": "Copyright © 2015, Claire Robsahm",
     "authors": ["Claire"],
     "dependencies": {
-        "gfm": "~>2.0.16",
-        "gfm:logger": "~>2.0.16"
+        "gfm:logger": "~>2.0.16",
+        "gfm": "~>2.0.16"
     }
 }

@@ -2,6 +2,6 @@ import event;
 
 interface EventReceiver
 {
-    bool CanHandle(const Event e);
-    void Handle(Event e);
+    public bool CanHandle(const Event e);
+    public void Handle(Event e);
 }
