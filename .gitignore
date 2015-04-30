@@ -2,6 +2,7 @@
 .dub
 docs.json
 __dummy.html
+*.out
 *.swp
 *.o
 *.obj
