@@ -36,7 +36,7 @@ class Event
         return currID;
     }
 
-    static private long AssignID(string name)
+    static public long AssignID(string name)
     {
         // Assigns the string to an ID.
         long newID;

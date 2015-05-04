@@ -18,8 +18,21 @@ class EventReceiver
         writeln("Event received");
     }
 
-    private void RegisterEvent(Event e, DgType func)
+    public void RegisterEvent(long e, DgType func)
     {
-        
+        DgType[] *funcptr = e in receiverList;
+        DgType[] funclist;
+
+        if (funcptr == null)
+        {
+            funclist = [];
+            receiverList[e] = funclist;
+        }
+        else
+        {
+            funclist = *funcptr;
+        }
+
+        funclist ~= func;
     }
 }
