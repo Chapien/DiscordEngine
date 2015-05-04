@@ -1,7 +1,25 @@
+import std.stdio;
 import event;
 
-interface EventReceiver
+class EventReceiver
 {
-    public bool CanHandle(const Event e);
-    public void Handle(Event e);
+    alias void delegate(Event) DgType;
+
+    // Maps eventIDs to an array of all delegates that use that event
+    private DgType[][long] receiverList;
+
+    public bool CanHandle(const Event e)
+    {
+        return true; // stub function, temporary
+    }
+
+    public void Handle(Event e)
+    {
+        writeln("Event received");
+    }
+
+    private void RegisterEvent(Event e, DgType func)
+    {
+        
+    }
 }
