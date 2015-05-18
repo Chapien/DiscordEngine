@@ -16,6 +16,12 @@ class EventReceiver
     public void Handle(Event e)
     {
         writeln("Event received");
+        long id = e.GetID();
+        // Call the appropriate function
+        foreach (DgType handler; receiverList[id])
+        {
+            handler(e);
+        }
     }
 
     public void RegisterEvent(long e, DgType func)
